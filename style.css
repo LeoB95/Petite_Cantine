@@ -23,7 +23,7 @@ body {
 }
 .titleAboutUs,
 .titleFindUs {
-  font-family: 'Satisfy';
+  font-family: 'Satisfy', 'Times New Roman', Times, serif;
   font-size: large;
   font-weight: bold;
   font-style: italic;
@@ -69,7 +69,6 @@ aside {
 aside img {
   max-width: 400px;
   width: 100%;
-  margin-top: 30px;
   border-radius: 20px;
 }
 .asideImg {
@@ -86,7 +85,7 @@ aside ul li {
 .collage {
   justify-content: center;
 }
-button {
+.buttonUber a {
   border: 1px solid gray;
   border-radius: 25px;
   background-color: wheat;
@@ -94,6 +93,7 @@ button {
   align-items: center;
   margin: 50px;
   width: auto;
+  text-decoration: black none;
 }
 .address {
   font-style: italic;

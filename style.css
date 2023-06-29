@@ -1,0 +1,136 @@
+/* Importation de la police d'écriture "Raleway" */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+}
+/* Réglage de la marge et application de la police d'écriture "Raleway" du corps de la page */
+body {
+  font-family: 'Raleway', 'Times New Roman', Times, serif;
+  max-width: 1440px;
+  margin: auto;
+  background-color: rgba(238, 239, 240, 0.879);
+}
+/* Organisation de la page en grille avec la fonction "grid" */
+#grid {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'main main'
+    'information foodMenu'
+    'footer footer';
+}
+.titleAboutUs,
+.titleFindUs {
+  font-family: 'Satisfy';
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.titleAboutUs {
+  padding-bottom: 10px;
+}
+.titleDay,
+.titleStarter,
+.titleHotDrink,
+.titleCocktailDrink {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+aside {
+  grid-area: information;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(250, 239, 225);
+}
+aside img {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.asideImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside ul li {
+  list-style: none;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.collage {
+  justify-content: center;
+}
+button {
+  border: 1px solid gray;
+  border-radius: 25px;
+  background-color: wheat;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: auto;
+}
+.address {
+  font-style: italic;
+  text-align: center;
+}
+#article1 {
+  grid-area: foodMenu;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.perDay {
+  margin-bottom: 20px;
+}
+.perDay,
+.starter,
+.hotDrink,
+.cocktailDrink {
+  background-color: whitesmoke;
+  border: solid 1px rgb(184, 183, 183);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px gray;
+  line-height: normal;
+}
+.hotList {
+  padding-top: 10px;
+}
+footer {
+  grid-area: footer;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+}

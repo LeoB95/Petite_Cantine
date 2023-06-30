@@ -65,6 +65,9 @@ aside {
   background-color: rgb(250, 239, 225);
   box-shadow: 0px 0px 10px rgba(249, 204, 146, 0.818);
 }
+.textAboutUs {
+  text-align: justify;
+}
 aside img {
   max-width: 400px;
   width: 100%;
@@ -151,8 +154,17 @@ iframe {
     align-items: center;
     padding: 10px;
   }
+  aside {
+    margin-bottom: 20px;
+  }
   iframe {
-    width: 100px;
+    width: 300px;
+  }
+  aside ul li {
+    justify-content: center;
+  }
+  aside ul {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -168,9 +180,13 @@ iframe {
     flex-direction: column;
     justify-content: center;
   }
+  aside {
+    margin-bottom: 20px;
+  }
   aside ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 10px;
   }
 }

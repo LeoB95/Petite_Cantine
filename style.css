@@ -63,12 +63,14 @@ aside {
   padding: 20px;
   border-radius: 20px;
   background-color: rgb(250, 239, 225);
+  box-shadow: 0px 0px 10px rgba(249, 204, 146, 0.818);
 }
 aside img {
   max-width: 400px;
   width: 100%;
   border-radius: 20px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 10px black;
 }
 .asideImg {
   display: flex;
@@ -132,6 +134,7 @@ iframe {
   justify-content: center;
   width: 250px;
   height: 250px;
+  box-shadow: 0px 0px 10px rgba(45, 45, 45, 0.746);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

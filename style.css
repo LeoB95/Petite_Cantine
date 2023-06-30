@@ -24,12 +24,10 @@ body {
 .titleAboutUs,
 .titleFindUs {
   font-family: 'Satisfy', 'Times New Roman', Times, serif;
-  font-size: large;
+  font-size: 22px;
   font-weight: bold;
   font-style: italic;
   text-align: center;
-}
-.titleAboutUs {
   padding-bottom: 10px;
 }
 .titleDay,
@@ -70,6 +68,7 @@ aside img {
   max-width: 400px;
   width: 100%;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 .asideImg {
   display: flex;
@@ -82,22 +81,16 @@ aside ul li {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+aside i {
+  margin-right: 10px;
+}
 .collage {
   justify-content: center;
 }
-.buttonUber a {
-  border: 1px solid gray;
-  border-radius: 25px;
-  background-color: wheat;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-  width: auto;
-  text-decoration: black none;
-}
-.address {
-  font-style: italic;
-  text-align: center;
+.findUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #article1 {
   grid-area: foodMenu;
@@ -135,6 +128,41 @@ footer a {
   text-decoration: none;
 }
 iframe {
-  width: 300px;
-  height: 300px;
+  border-radius: 20px;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 1023px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  iframe {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 767px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .findUs {
+    flex-direction: column;
+    justify-content: center;
+  }
+  aside ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

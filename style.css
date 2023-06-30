@@ -78,10 +78,15 @@ aside img {
   justify-content: center;
   align-items: center;
 }
+aside ul {
+  margin-top: 30px;
+}
 aside ul li {
   list-style: none;
   padding-bottom: 20px;
   padding-top: 20px;
+  align-items: center;
+  vertical-align: middle;
 }
 aside i {
   margin-right: 10px;
@@ -92,7 +97,7 @@ aside i {
 .findUs {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 #article1 {
   grid-area: foodMenu;
